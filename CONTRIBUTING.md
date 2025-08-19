@@ -8,7 +8,7 @@ Open an issue with a short title, steps to reproduce, and environment (OS / Pyth
 ## Quick setup
 ```bash
 git clone https://github.com/ankitsencode123/realmixgan.git
-cd RealMixGAN
+cd realmixgan
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
