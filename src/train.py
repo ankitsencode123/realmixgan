@@ -150,17 +150,9 @@ for epoch in range(num_epochs):
             mixed_eval = torch.cat([z_eval, torch.randn(16, image_size).to(device) * 0.1], dim=1)
             fake_eval_imp = improved_gan.generator(mixed_eval).view(-1, 28, 28).cpu().numpy()
 
-        save_generated_grid(fake_eval_std, f'plots_std_epoch_{epoch+1}.png')
-        save_generated_grid(fake_eval_imp, f'plots_imp_epoch_{epoch+1}.png')
-
     if len(std_wd) > 0:
         pass
-
-plot_losses(std_g_losses, std_d_losses, 'outputs/standard_losses.png')
-plot_losses(imp_g_losses, imp_d_losses, 'outputs/improved_losses.png')
 if len(std_wd) > 0 and len(imp_wd) > 0:
     final_std = std_wd[-1]
     final_imp = imp_wd[-1]
-torch.save(standard_gan.generator.state_dict(), 'outputs/standard_generator.pth')
-torch.save(improved_gan.generator.state_dict(), 'outputs/improved_generator.pth')
 
