@@ -1,6 +1,6 @@
 # realmixgan
 RealMixGAN: Accelerating GAN Convergence by Leaking Real Data Distribution into the Latent Space
-This repository contains the implementation and visualizations for the RealMixGAN project performed during the IEEE CIS Kolkata Chapter Summer Internship 2025. The project explores a generator-input mixing strategy where noisy projections of real images are leaked into the generator latent space to accelerate convergence and improve mode coverage on MNIST.
+This repository contains the implementation and visualizations for the RealMixGAN project performed during my IEEE CIS Kolkata Chapter Summer Internship 2025. The project explores a generator-input mixing strategy where noisy projections of real images are leaked into the generator latent space to accelerate convergence and improve mode coverage on MNIST.
 Included:
 - Reproducible PyTorch implementation of Standard GAN and RealMixGAN.
 - Training scripts that produce loss curves, Wasserstein distance metrics, and sample images.
