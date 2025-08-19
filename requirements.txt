@@ -1,0 +1,8 @@
+torch>=1.13
+torchvision>=0.14
+matplotlib>=3.5
+numpy>=1.22
+scipy>=1.9
+tqdm>=4.60
+seaborn>=0.12
+
